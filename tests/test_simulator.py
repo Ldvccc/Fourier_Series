@@ -19,6 +19,6 @@ def test_expval_z():
     val_ket1 = expval_z([0,1])
     assert np.allclose(val_ket1, -1.0)
 
-    val_ket0_1 = val_ket0 + val_ket1
-    assert np.allclose(val_ket0_1, 0.0)
+    val_state = expval_z([1/np.sqrt(2),1j/np.sqrt(2)])
+    assert np.allclose(val_state, 0.0)
 

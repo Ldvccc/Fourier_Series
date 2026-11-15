@@ -8,4 +8,4 @@ def expval_z(state):
     psi = np.array(state)
     z = np.array([[1,0], [0, -1]])
 
-    return np.real(np.dot(psi, z @ psi))
+    return np.real(np.vdot(psi, z @ psi))

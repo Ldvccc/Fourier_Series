@@ -10,7 +10,7 @@ def rx(theta) -> list:
 def ry(theta) -> list:
     "Rotation Ry. Prend un angle en entrée et renvoie la matrice Ry"
 
-    matrice = [[np.cos(theta/2), np.sin(theta/2)],[-np.sin(theta/2), np.cos(theta/2)]]
+    matrice = [[np.cos(theta/2), -np.sin(theta/2)],[np.sin(theta/2), np.cos(theta/2)]]
 
     return matrice
 
